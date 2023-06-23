@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnv_home"
+        android:icon="@drawable/home_colour"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bnv_pay"
+        android:icon="@drawable/card_grey"
+        android:title="@string/pay" />
+
+    <item
+        android:id="@+id/bnv_rewards"
+        android:icon="@drawable/rewards_grey"
+        android:title="@string/rewards" />
+
+</menu>
