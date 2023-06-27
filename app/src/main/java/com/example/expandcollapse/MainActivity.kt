@@ -2,11 +2,10 @@ package com.example.expandcollapse
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.expandcollapse.droid.home.HomeActivity
 
-class MainActivity : ComponentActivity() {
-
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
