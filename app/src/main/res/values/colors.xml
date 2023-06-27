@@ -10,4 +10,13 @@
     <color name="my_background_color">#000000</color>
     <color name="bottom_nav_item_color">#FFFFFF</color>
     <color name="in_active_color">#858989</color>
+
+    <color name="cheq_black">#131414</color>
+    <color name="cheq_grey">#E6EAE9</color>
+    <color name="cheq_text_grey">#858989</color>
+    <color name="cheq_due_pink">#F5466A</color>
+    <color name="cheq_grey_a">#ADB2B2</color>
+    <color name="cheq_grey_b">#CACFCF</color>
+    <color name="cheq_primary_p5">#00C197</color>
+    <color name="cheq_grey_c">#6E7170</color>
 </resources>
