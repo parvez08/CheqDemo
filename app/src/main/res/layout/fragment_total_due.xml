@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_gradient"
+    android:paddingBottom="32dp"
+    tools:context=".droid.total_due.TotalDueFragment">
+
+    <include
+        android:id="@+id/inc_home_header"
+        layout="@layout/fragment_home_header" />
+
+    <include
+        android:id="@+id/inc_total_due"
+        layout="@layout/total_due_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inc_home_header"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>
