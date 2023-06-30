@@ -7,11 +7,11 @@
         android:layout_height="wrap_content"
         android:paddingHorizontal="20dp">
 
-        <androidx.cardview.widget.CardView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardUseCompatPadding="true"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_total_due_layer_list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -65,13 +65,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="12dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view">
 
+                    <include layout="@layout/row_credit_card" />
+                    <include layout="@layout/row_credit_card" />
+                    <include layout="@layout/row_credit_card" />
                     <include layout="@layout/row_credit_card" />
 
                 </LinearLayout>
@@ -131,10 +133,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
+        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
