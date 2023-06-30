@@ -16,7 +16,6 @@
         layout="@layout/total_due_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/inc_home_header"
-        android:layout_marginTop="26dp" />
+        android:layout_below="@id/inc_home_header" />
 
 </RelativeLayout>
