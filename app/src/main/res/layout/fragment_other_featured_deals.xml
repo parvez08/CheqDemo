@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".droid.deals.OtherFeaturedDealsFragment">
+    android:layout_height="wrap_content"
+    tools:context=".droid.deals.FeaturedDealsFragment"
+    tools:ignore="RtlSymmetry">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@color/cheq_grey_d"
+        android:paddingStart="24dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="OTHER Featured deals"
+            android:textAllCaps="true"
+            android:textColor="@color/cheq_grey_c"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_other_featured_deals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:clipToPadding="true"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:itemCount="4"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:listitem="@layout/row_featured_deals_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
