@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top border stroke -->
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1F6A7381" /> <!-- Set your desired shadow color and opacity -->
+            <corners android:radius="16dp" /> <!-- Set your desired corner radius -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <stroke
+                android:width="1dp"
+                android:color="#E6EAE9" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Bottom border stroke -->
+    <item
+        android:bottom="8dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="#E6EAE9" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>
