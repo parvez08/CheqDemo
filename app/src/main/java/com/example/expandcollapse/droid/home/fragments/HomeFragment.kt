@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.expandcollapse.R
 import com.example.expandcollapse.databinding.FragmentHomeBinding
-import com.example.expandcollapse.droid.action_recommended.ActionRecommendedFragment
 import com.example.expandcollapse.droid.credit_score.CreditScoreFragment
 import com.example.expandcollapse.droid.total_due.TotalDueFragment
 
@@ -33,25 +33,22 @@ class HomeFragment : Fragment() {
     private fun renderFragments() {
 
         val totalDueFragmentInstance = TotalDueFragment.newInstance()
-        childFragmentManager.beginTransaction().replace(
-            binding.flTotalDue.id,
-            totalDueFragmentInstance,
-            TotalDueFragment.TAG2
-        ).commitAllowingStateLoss()
+        childFragmentManager.beginTransaction()
+            .replace(
+                binding.flTotalDue.id,
+                totalDueFragmentInstance,
+                TotalDueFragment.TAG2
+            )
+            .commitAllowingStateLoss()
 
         val creditScoreFragmentInstance = CreditScoreFragment.newInstance()
-        childFragmentManager.beginTransaction().replace(
-            binding.flCreditScore.id,
-            creditScoreFragmentInstance,
-            CreditScoreFragment.TAG2
-        ).commitAllowingStateLoss()
-
-        val actionRecomFragmentInstance = ActionRecommendedFragment.newInstance()
-        childFragmentManager.beginTransaction().replace(
-            binding.flActionRecommended.id,
-            actionRecomFragmentInstance,
-            ActionRecommendedFragment.TAG2
-        ).commitAllowingStateLoss()
+        childFragmentManager.beginTransaction()
+            .setCustomAnimations(R.animator.slide_up, R.animator.slide_up)
+            .replace(
+                binding.flCreditScore.id,
+                creditScoreFragmentInstance,
+                CreditScoreFragment.TAG2
+            ).commitAllowingStateLoss()
 
     }
 
