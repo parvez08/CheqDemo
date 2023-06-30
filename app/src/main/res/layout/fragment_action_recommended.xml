@@ -11,11 +11,18 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
         android:text="ACTION RECOMMENDED"
         android:textAllCaps="true"
         android:textColor="@color/cheq_grey_c"
         android:textSize="10sp"
         android:textStyle="bold" />
 
-    <include layout="@layout/cheq_safe_card_layout" />
+    <include
+        layout="@layout/cheq_safe_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="10dp" />
 </RelativeLayout>

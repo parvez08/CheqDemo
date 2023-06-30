@@ -11,12 +11,23 @@
     <color name="bottom_nav_item_color">#FFFFFF</color>
     <color name="in_active_color">#858989</color>
 
-    <color name="cheq_black">#131414</color>
     <color name="cheq_grey">#E6EAE9</color>
-    <color name="cheq_text_grey">#858989</color>
-    <color name="cheq_due_pink">#F5466A</color>
     <color name="cheq_grey_a">#ADB2B2</color>
     <color name="cheq_grey_b">#CACFCF</color>
-    <color name="cheq_primary_p5">#00C197</color>
     <color name="cheq_grey_c">#6E7170</color>
+    <color name="cheq_grey_d">#FAF8F8</color>
+
+    <color name="cheq_black">#131414</color>
+    <color name="cheq_due_pink">#F5466A</color>
+    <color name="cheq_primary_p5">#00C197</color>
+
+    <color name="cheq_white_a">#FFFDEE</color>
+    <color name="cheq_yellow">#FF8803</color>
+    <color name="cheq_color_a">#54B9AE</color>
+    <color name="cheq_green">#008938</color>
+
+    <color name="cheq_text_grey">#858989</color>
+    <color name="cheq_font_b">#202948</color>
+    <color name="cheq_font_c">#2F3131</color>
+
 </resources>

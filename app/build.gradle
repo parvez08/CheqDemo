@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+apply plugin: 'kotlin-parcelize'
+
 android {
     namespace 'com.example.expandcollapse'
     compileSdk 34
@@ -72,4 +74,7 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
 }
