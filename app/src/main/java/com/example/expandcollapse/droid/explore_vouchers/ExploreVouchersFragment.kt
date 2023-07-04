@@ -45,7 +45,7 @@ class ExploreVouchersFragment : Fragment() {
             override fun onSelected(position: Int) {
                 activity?.supportFragmentManager?.beginTransaction()
                     ?.replace(
-                        R.id.fl_top_frag,
+                        android.R.id.content,
                         BlankFragment.newInstance(),
                         BlankFragment.TAG2
                     )
