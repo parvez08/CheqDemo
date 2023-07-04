@@ -46,7 +46,7 @@ class RewardsHeaderFragment : Fragment() {
         binding.clCtaGetCashInstant.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()
                 ?.replace(
-                    R.id.fl_top_frag,
+                    android.R.id.content,
                     BlankFragment.newInstance(),
                     BlankFragment.TAG2
                 )
